@@ -35,6 +35,10 @@ a, table.table a {
   text-align: center;
 }
 
+// Citation
+.citation, .citation-number {
+  color: var(--global-theme-color);
+}
 
 // Profile
 
@@ -196,7 +200,7 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-      color: pink;
+      color: var(--global-theme-color);
       text-decoration: none;
     }
   }
@@ -289,8 +293,13 @@ footer.sticky-bottom {
       }
     }
   }
-  .card img {
-    width: 100%;
+  .card {
+    img {
+      width: 100%;
+    }
+    .card-title {
+      color: $black-color;
+    }
   }
 }
 
@@ -313,8 +322,8 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
+    color: lighten($grey-color, 20%);
+    border-top: 1px solid lighten($grey-color, 20%);
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -417,9 +426,13 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
-code {
-  color: var(--global-theme-color);
-}
+// pre {
+//   color: $white-color; //var(--global-text-color);
+// }
+// code {
+//   color: $white-color; //var(--global-theme-color);
+// }
+
 // Transitioning Themes
 html.transition,
 html.transition *,

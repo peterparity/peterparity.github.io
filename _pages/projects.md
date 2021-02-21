@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Current research projects.
 nav: false
@@ -21,10 +21,20 @@ nav: false
         <img src="{{ project.img | relative_url }}" alt="project thumbnail">
         {% endif %}
         <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+          <h2 class="card-title">{{ project.title }}</h2>
           <p class="card-text">{{ project.description }}</p>
-          <div class="row ml-1 mr-1 p-0">
+          <div class="row ml-4 mr-0 mt-2 p-0">
+            {% if project.paper %}
+            <div class="col">
+            <div class="paper-icon">
+              <div class="icon" data-toggle="tooltip" title="Paper">
+                <a href="{{ project.paper }}" target="_blank"><i class="fas fa-file"></i></a>
+              </div>
+            </div>
+            </div>
+            {% endif %}
             {% if project.github %}
+            <div class="col">
             <div class="github-icon">
               <div class="icon" data-toggle="tooltip" title="Code Repository">
                 <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
@@ -35,6 +45,7 @@ nav: false
                 <span id="{{ project.github_stars }}-stars"></span>
               </span>
               {% endif %}
+            </div>
             </div>
             {% endif %}
           </div>

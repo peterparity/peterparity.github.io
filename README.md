@@ -1,3 +1,3 @@
 # peterparity.github.io
 
-Run `./bin/deploy --user` to deploy website.
+Run `./bin/deploy --user` to manually deploy website.
