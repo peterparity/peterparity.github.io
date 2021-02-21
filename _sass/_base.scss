@@ -322,8 +322,8 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: lighten($grey-color, 20%);
-    border-top: 1px solid lighten($grey-color, 20%);
+    color: $grey-color-light2;
+    border-top: 1px solid $grey-color-light2;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
