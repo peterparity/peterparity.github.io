@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Extracting Interpretable Physical Parameters
 description: We use a variational autoencoder (VAE) to extract relevant physical parameters governing the dynamics of spatiotemporal data.
 date: 2020-09-11
@@ -10,10 +10,11 @@ importance: 1
 ---
 
 test
-
+{% katexmm %}
 $$
     \int_\gamma dx
 $$
+{% endkatexmm %}
 
 {% highlight c++ %}
 int main(int argc, char const *argv[])

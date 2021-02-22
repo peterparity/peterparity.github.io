@@ -1,11 +1,9 @@
 .highlight{
-  width: 96%;
-  margin: 10px 10px 17px 10px;
-  font-size: 14px;
-  /* line-height: 1.2em; */
-  padding: 17px 18px 1px 18px;
+  width: 97%;
+  margin: 10px auto;
+  padding: 10px;
   /* box-shadow: 3px 3px 12px 3px #272822; */
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .highlight .lineno {
@@ -16,6 +14,8 @@
 .highlight pre { 
   color: #ffffff;
   background-color: #272822;
+  font-size: 12px;
+  margin: 0px;
 }
 
 .highlight table td { padding: 5px; }

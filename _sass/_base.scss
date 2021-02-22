@@ -79,6 +79,9 @@ a, table.table a {
   }
 }
 
+// .post-content {
+//   text-align: justify;
+// }
 
 // Navbar customization
 
@@ -432,6 +435,11 @@ footer.sticky-bottom {
 // code {
 //   color: $white-color; //var(--global-theme-color);
 // }
+
+// Horizontal rule
+hr {
+  border-top: 1px solid $grey-color-light;
+}
 
 // Transitioning Themes
 html.transition,
