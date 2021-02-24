@@ -52,7 +52,18 @@ We implement a physics-informed architecture based on variational autoencoders (
 </figure>
 
 ## Experiments
-To test our method, we train our model on simulated data from a variety of PDEs with varying dynamical parameters that act as uncontrolled variables.
+To test our method, we train our model on simulated data from a variety of PDEs with varying dynamical parameters that act as uncontrolled variables. In particular, we generate datasets using the 1D Kuramoto–Sivashinsky (KS) equation (with varying viscosity damping parameter $\gamma$ acting as an uncontrolled variable)
+$$
+  \frac{\partial u}{\partial t} = -\gamma \partial_x^4 u - \partial_x^2 u - u\partial_x u,
+$$
+the 1D nonlinear Schrödinger (NS) equation (with varying nonlinearity coefficient $\kappa$)
+$$
+  i \frac{\partial \psi}{\partial t} = -\frac{1}{2} \partial_x^2\psi + \kappa|\psi|^2\psi,
+$$
+and the 2D convection–diffusion (CD) equation (with varying diffusion constant $D$ and drift velocity $\mathbf{v}$)
+$$
+  \frac{\partial u}{\partial t} = D\nabla^2u - \mathbf{v} \cdot \nabla u.
+$$
 
 <figure style="max-width: 800px">
   <img src="{{ site.url }}/assets/img/projects/pde_vae/examples_fig.svg" style="background-color:white"/>
