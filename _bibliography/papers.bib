@@ -1,6 +1,27 @@
 ---
 ---
 
+@misc{2107.10879,
+  author   = {Peter Y. Lu and Joan Ariño and Marin Soljačić},
+  title    = {Discovering Sparse Interpretable Dynamics from Partial Observations},
+  year     = {2021},
+  eprint   = {arXiv:2107.10879},
+  arxiv    = {2107.10879},
+  code     = {https://github.com/peterparity/symder},
+  abstract = {Identifying the governing equations of a nonlinear dynamical system is key to both understanding the physical features of the system and constructing an accurate model of the dynamics that generalizes well beyond the available data. We propose a machine learning framework for discovering these governing equations using only partial observations, combining an encoder for state reconstruction with a sparse symbolic model. Our tests show that this method can successfully reconstruct the full system state and identify the underlying dynamics for a variety of ODE and PDE systems.},
+  selected = {true}
+}
+
+@misc{2104.11667,
+  author   = {Samuel Kim and Peter Y. Lu and Charlotte Loh and Jamie Smith and Jasper Snoek and Marin Soljačić},
+  title    = {Scalable and Flexible Deep Bayesian Optimization with Auxiliary Information for Scientific Problems},
+  year     = {2021},
+  eprint   = {arXiv:2104.11667},
+  arxiv    = {2104.11667},
+  abstract = {Bayesian optimization (BO) is a popular paradigm for global optimization of expensive black-box functions, but there are many domains where the function is not completely black-box. The data may have some known structure, e.g. symmetries, and the data generation process can yield useful intermediate or auxiliary information in addition to the value of the optimization objective. However, surrogate models traditionally employed in BO, such as Gaussian Processes (GPs), scale poorly with dataset size and struggle to incorporate known structure or auxiliary information. Instead, we propose performing BO on complex, structured problems by using Bayesian Neural Networks (BNNs), a class of scalable surrogate models that have the representation power and flexibility to handle structured data and exploit auxiliary information. We demonstrate BO on a number of realistic problems in physics and chemistry, including topology optimization of photonic crystal materials using convolutional neural networks, and chemical property optimization of molecules using graph neural networks. On these complex tasks, we show that BNNs often outperform GPs as surrogate models for BO in terms of both sampling efficiency and computational cost.},
+  selected = {true}
+}
+
 @article{PhysRevX.10.031056,
   title     = {Extracting Interpretable Physical Parameters from Spatiotemporal Systems Using Unsupervised Learning},
   author    = {Lu, Peter Y. and Kim, Samuel and Soljačić, Marin},
@@ -27,10 +48,10 @@
   author   = {Samuel {Kim} and Peter Y. {Lu} and Srijon {Mukherjee} and Michael {Gilbert} and Li {Jing} and Vladimir {Čeperić} and Marin {Soljačić}},
   journal  = {IEEE Transactions on Neural Networks and Learning Systems},
   title    = {Integration of Neural Network-Based Symbolic Regression in Deep Learning for Scientific Discovery},
-  year     = {2020},
-  volume   = {},
-  number   = {},
-  pages    = {1-12},
+  year     = {2021},
+  volume   = {32},
+  number   = {9},
+  pages    = {4166-4177},
   doi      = {10.1109/TNNLS.2020.3017010},
   url      = {https://ieeexplore.ieee.org/document/9180100},
   html     = {https://ieeexplore.ieee.org/document/9180100},
