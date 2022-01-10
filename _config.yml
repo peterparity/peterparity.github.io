@@ -140,8 +140,8 @@ plugins:
 
 scholar:
 
-  last_name: Lu
-  first_name: [Peter, Y.]
+  last_name: [Lu, Lu*]
+  first_name: [Peter Y.,]
 
   style: apa
   locale: en
