@@ -1,5 +1,15 @@
 ---
 ---
+@misc{2207.00529,
+  author   = {Michael Zhang and Samuel Kim and Peter Y. Lu and Marin Soljačić},
+  title    = {Deep Learning and Symbolic Regression for Discovering Parametric Equations},
+  year     = {2022},
+  eprint   = {arXiv:2207.00529},
+  arxiv    = {2207.00529},
+  pdf      = {https://arxiv.org/pdf/2207.00529.pdf},
+  abstract = {Symbolic regression is a machine learning technique that can learn the governing formulas of data and thus has the potential to transform scientific discovery. However, symbolic regression is still limited in the complexity and dimensionality of the systems that it can analyze. Deep learning on the other hand has transformed machine learning in its ability to analyze extremely complex and high-dimensional datasets. We propose a neural network architecture to extend symbolic regression to parametric systems where some coefficient may vary but the structure of the underlying governing equation remains constant. We demonstrate our method on various analytic expressions, ODEs, and PDEs with varying coefficients and show that it extrapolates well outside of the training domain. The neural network-based architecture can also integrate with other deep learning architectures so that it can analyze high-dimensional data while being trained end-to-end. To this end we integrate our architecture with convolutional neural networks to analyze 1D images of varying spring systems.}
+}
+
 @inproceedings{alao2021discovering,
   title     = {Discovering Dynamical Parameters by Interpreting Echo State Networks},
   author    = {Oreoluwa Alao* and Peter Y. Lu* and Marin Soljačić},
@@ -28,12 +38,12 @@
 
 @misc{2104.11667,
   author   = {Samuel Kim and Peter Y. Lu and Charlotte Loh and Jamie Smith and Jasper Snoek and Marin Soljačić},
-  title    = {Scalable and Flexible Deep Bayesian Optimization with Auxiliary Information for Scientific Problems},
+  title    = {Deep Learning for Bayesian Optimization of Scientific Problems with High-Dimensional Structure},
   year     = {2021},
   eprint   = {arXiv:2104.11667},
   arxiv    = {2104.11667},
   pdf      = {https://arxiv.org/pdf/2104.11667.pdf},
-  abstract = {Bayesian optimization (BO) is a popular paradigm for global optimization of expensive black-box functions, but there are many domains where the function is not completely black-box. The data may have some known structure, e.g. symmetries, and the data generation process can yield useful intermediate or auxiliary information in addition to the value of the optimization objective. However, surrogate models traditionally employed in BO, such as Gaussian Processes (GPs), scale poorly with dataset size and struggle to incorporate known structure or auxiliary information. Instead, we propose performing BO on complex, structured problems by using Bayesian Neural Networks (BNNs), a class of scalable surrogate models that have the representation power and flexibility to handle structured data and exploit auxiliary information. We demonstrate BO on a number of realistic problems in physics and chemistry, including topology optimization of photonic crystal materials using convolutional neural networks, and chemical property optimization of molecules using graph neural networks. On these complex tasks, we show that BNNs often outperform GPs as surrogate models for BO in terms of both sampling efficiency and computational cost.},
+  abstract = {Bayesian optimization (BO) is a popular paradigm for global optimization of expensive black-box functions, but there are many domains where the function is not completely black-box. The data may have some known structure (e.g. symmetries) and/or the data generation process can yield useful intermediate or auxiliary information in addition to the value of the optimization objective. However, surrogate models traditionally employed in BO, such as Gaussian Processes (GPs), scale poorly with dataset size and do not easily accommodate known structure or auxiliary information. Instead, we propose performing BO on complex, structured problems by using deep learning models with uncertainty, a class of scalable surrogate models that have the representation power and flexibility to handle structured data and exploit auxiliary information. We demonstrate BO on a number of realistic problems in physics and chemistry, including topology optimization of photonic crystal materials using convolutional neural networks, and chemical property optimization of molecules using graph neural networks. On these complex tasks, we show that neural networks often outperform GPs as surrogate models for BO in terms of both sampling efficiency and computational cost.},
   selected = {true}
 }
 
