@@ -7,15 +7,15 @@ description:
 profile:
   align: right
   image: photo-peter-lu.jpg
-  address: >
-    <p>77 Massachusetts Ave, Bldg 6C-411</p>
-    <p>Cambridge, MA 02139</p>
+  # address: >
+  #   <p>77 Massachusetts Ave, Bldg 6C-411</p>
+  #   <p>Cambridge, MA 02139</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-<b>I am a physics Ph.D. student in [Marin Soljačić's group](https://www.rle.mit.edu/marin/) at [MIT](https://physics.mit.edu/). I work at the intersection of physics and machine learning, and my research interests include physics-informed machine learning, condensed matter physics, nonlinear dynamics, and photonics. I am more broadly interested in developing new computational methods for simulating and understanding physical systems with an emphasis on incorporating physics-based priors and providing interpretability.</b>
+<b>I am a Postdoctoral Scholar at the [University of Chicago Data Science Institute](https://datascience.uchicago.edu) working at the intersection of physics and machine learning. My research interests include physics-informed machine learning, condensed matter physics, and nonlinear dynamics, and I am more broadly interested in developing new computational methods for modeling and understanding physical systems with an emphasis on incorporating physics-informed priors and developing interpretable representation learning methods.</b>
 
-<b>I received my A.B. in Physics and Mathematics from Harvard College in 2016 and am currently pursuing a Ph.D. in Physics at MIT.</b>
+<b>I received a Ph.D. in Physics from MIT in 2022, and an A.B. in Physics and Mathematics from Harvard in 2016.</b>
