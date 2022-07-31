@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Current research projects.
+description: Current and past research projects.
 nav: true
 ---
 
