@@ -1,5 +1,28 @@
 ---
 ---
+@article{Lu2022,
+  author   = {Lu, Peter Y.
+              and Ari{\~{n}}o Bernad, Joan
+              and Solja{\v{c}}i{\'{c}}, Marin},
+  title    = {Discovering sparse interpretable dynamics from partial observations},
+  journal  = {Communications Physics},
+  year     = {2022},
+  month    = {Aug},
+  day      = {12},
+  volume   = {5},
+  number   = {1},
+  pages    = {206},
+  abstract = {Identifying the governing equations of a nonlinear dynamical system is key to both understanding the physical features of the system and constructing an accurate model of the dynamics that generalizes well beyond the available data. Achieving this kind of interpretable system identification is even more difficult for partially observed systems. We propose a machine learning framework for discovering the governing equations of a dynamical system using only partial observations, combining an encoder for state reconstruction with a sparse symbolic model. The entire architecture is trained end-to-end by matching the higher-order symbolic time derivatives of the sparse symbolic model with finite difference estimates from the data. Our tests show that this method can successfully reconstruct the full system state and identify the equations of motion governing the underlying dynamics for a variety of ordinary differential equation (ODE) and partial differential equation (PDE) systems.},
+  issn     = {2399-3650},
+  doi      = {10.1038/s42005-022-00987-z},
+  url      = {https://doi.org/10.1038/s42005-022-00987-z},
+  html     = {https://doi.org/10.1038/s42005-022-00987-z},
+  pdf      = {https://www.nature.com/articles/s42005-022-00987-z.pdf},
+  poster   = {partial_observations_poster_presentation.pdf},
+  code     = {https://github.com/peterparity/symder},
+  selected = {true}
+}
+
 @misc{2207.00529,
   author   = {Michael Zhang and Samuel Kim and Peter Y. Lu and Marin Soljačić},
   title    = {Deep Learning and Symbolic Regression for Discovering Parametric Equations},
@@ -22,18 +45,6 @@
   abstract  = {Reservoir computing architectures known as echo state networks (ESNs) have been shown to have exceptional predictive capabilities when trained on chaotic systems. However, ESN models are often seen as black-box predictors that lack interpretability. We show that the parameters governing the dynamics of a complex nonlinear system can be encoded in the learned readout layer of an ESN. We can extract these dynamical parameters by examining the geometry of the readout layer weights through principal component analysis. We demonstrate this approach by extracting the values of three dynamical parameters ($\sigma$, $\rho$, $\beta$) from a dataset of Lorenz systems where all three parameters are varying among different trajectories. Our proposed method not only demonstrates the interpretability of the ESN readout layer but also provides a computationally inexpensive, unsupervised data-driven approach for identifying uncontrolled variables affecting real-world data from nonlinear dynamical systems.},
   comment   = { --- <a href="https://ai4sciencecommunity.github.io/award.html" target="_blank">Best Paper Award</a>},
   selected  = {true}
-}
-
-@misc{2107.10879,
-  author   = {Peter Y. Lu and Joan Ariño and Marin Soljačić},
-  title    = {Discovering Sparse Interpretable Dynamics from Partial Observations},
-  year     = {2021},
-  eprint   = {arXiv:2107.10879},
-  arxiv    = {2107.10879},
-  pdf      = {https://arxiv.org/pdf/2107.10879.pdf},
-  code     = {https://github.com/peterparity/symder},
-  abstract = {Identifying the governing equations of a nonlinear dynamical system is key to both understanding the physical features of the system and constructing an accurate model of the dynamics that generalizes well beyond the available data. We propose a machine learning framework for discovering these governing equations using only partial observations, combining an encoder for state reconstruction with a sparse symbolic model. Our tests show that this method can successfully reconstruct the full system state and identify the underlying dynamics for a variety of ODE and PDE systems.},
-  selected = {true}
 }
 
 @misc{2104.11667,

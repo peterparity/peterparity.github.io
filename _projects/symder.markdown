@@ -5,7 +5,7 @@ description: We discover sparse symbolic governing equations for dynamical syste
 date: 2022-01-10
 img: /assets/img/projects/symder/key_image.svg
 github: https://github.com/peterparity/symder
-paper: https://arxiv.org/pdf/2107.10879.pdf
+paper: https://doi.org/10.1038/s42005-022-00987-z
 importance: 1
 
 _styles: >
@@ -30,7 +30,7 @@ _styles: >
 
 ---
 <div class="publications">
-{% bibliography -f papers -q @misc[arxiv=2107.10879] %}
+{% bibliography -f papers -q @misc[doi=10.1038/s42005-022-00987-z] %}
 </div>
 ---
 
