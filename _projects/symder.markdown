@@ -83,7 +83,7 @@ As a result of reconstructing the hidden states and identifying the exact symbol
 
 This new framework shows how machine learning can generate interpretable models even from incomplete measurements and will enable us to better understand real-world data from complex dynamical systems.
 
-Please see [our paper](https://arxiv.org/pdf/2107.10879.pdf) for more details.
+Please see [our paper](https://www.nature.com/articles/s42005-022-00987-z.pdf) for more details.
 
 
 {% endkatexmm %}
