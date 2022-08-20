@@ -7,9 +7,8 @@ description:
 profile:
   align: right
   image: photo-peter-lu.jpg
-  # address: >
-  #   <p>77 Massachusetts Ave, Bldg 6C-411</p>
-  #   <p>Cambridge, MA 02139</p>
+  address: >
+    <p>Office: Searle 202</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
