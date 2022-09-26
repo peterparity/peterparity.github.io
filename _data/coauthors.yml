@@ -9,3 +9,19 @@
 "Jing":
   - firstname: ["Li", "L."]
     url: http://jingli.io/
+
+"Dangovski":
+  - firstname: ["Rumen", "R."]
+    url: http://super-ms.mit.edu/rumen.html
+
+"Loh":
+  - firstname: ["Charlotte", "C."]
+    url: https://www.linkedin.com/in/charlotte-loh-b80329193
+
+"Nagel":
+  - firstname: ["Sidney R.", "S. R."]
+    url: https://nagelgroup.uchicago.edu/Nagel-Group/index.html
+
+"Burton":
+  - firstname: ["Justin C.", "J. C."]
+    url: https://www.jcburtonlab.com/
