@@ -30,7 +30,7 @@ _styles: >
 
 ---
 <div class="publications">
-{% bibliography -f papers -q @misc[doi=10.1038/s42005-022-00987-z] %}
+{% bibliography -f papers -q @article[doi=10.1038/s42005-022-00987-z] %}
 </div>
 ---
 
