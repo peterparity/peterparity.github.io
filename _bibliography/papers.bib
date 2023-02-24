@@ -1,6 +1,17 @@
 ---
 ---
 
+@misc{2302.12235,
+  author   = {Owen Dugan and Peter Y. Lu and Rumen Dangovski and Di Luo and Marin Soljačić},
+  title    = {Q-Flow: Generative Modeling for Differential Equations of Open Quantum Dynamics with Normalizing Flows},
+  year     = {2023},
+  eprint   = {arXiv:2302.12235},
+  arxiv    = {2302.12235},
+  pdf      = {https://arxiv.org/pdf/2302.12235.pdf},
+  abstract = {Studying the dynamics of open quantum systems holds the potential to enable breakthroughs both in fundamental physics and applications to quantum engineering and quantum computation. Due to the high-dimensional nature of the problem, customized deep generative neural networks have been instrumental in modeling the high-dimensional density matrix $\rho$, which is the key description for the dynamics of such systems. However, the complex-valued nature and normalization constraints of $\rho$, as well as its complicated dynamics, prohibit a seamless connection between open quantum systems and the recent advances in deep generative modeling. Here we lift that limitation by utilizing a reformulation of open quantum system dynamics to a partial differential equation (PDE) for a corresponding probability distribution $Q$, the Husimi Q function. 
+              Thus, we model the Q function seamlessly with \emph{off-the-shelf} deep generative models such as normalizing flows. Additionally, we develop novel methods for learning  normalizing flow evolution governed by high-dimensional PDEs, based on the Euler method and the application of the time-dependent variational principle. We name the resulting approach \emph{Q-Flow} and demonstrate the scalability and efficiency of Q-Flow on open quantum system simulations, including the dissipative harmonic oscillator and the dissipative bosonic model. Q-Flow is superior to conventional PDE solvers and state-of-the-art physics-informed neural network solvers, especially in high-dimensional systems.}
+}
+
 @article{kim2022deep,
   title    = {Deep Learning for Bayesian Optimization of Scientific Problems with High-Dimensional Structure},
   author   = {Samuel Kim and Peter Y. Lu and Charlotte Loh and Jamie Smith and Jasper Snoek and Marin Soljačić},

@@ -25,3 +25,23 @@
 "Burton":
   - firstname: ["Justin C.", "J. C."]
     url: https://www.jcburtonlab.com/
+
+"Luo":
+  - firstname: ["Di", "D."]
+    url: https://scholar.google.com/citations?user=OxZytTQAAAAJ
+
+"Reichel":
+  - firstname: ["Kimberly", "Kimberly S.", "K. S.", "K."]
+    url: https://www.linkedin.com/in/kimberly-reichel
+
+"Mittleman":
+  - firstname: ["Daniel M.", "D. M."]
+    url: https://www.brown.edu/research/labs/mittleman/home
+
+"Snoek":
+  - firstname: ["Jasper", "J."]
+    url: https://scholar.google.com/citations?user=FM2DTXwAAAAJ
+
+"Smith":
+  - firstname: ["Jamie", "J."]
+    url: https://scholar.google.com/citations?user=jk17mo8AAAAJ
