@@ -15,6 +15,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-<b>I am a [Schmidt AI in Science Fellow](https://aiscience.uchicago.edu/) at the [University of Chicago](https://datascience.uchicago.edu) working at the intersection of physics and machine learning. My research interests include physics-informed machine learning, condensed matter physics, and nonlinear dynamics, and I am more broadly interested in developing new computational methods for modeling and understanding physical systems with an emphasis on incorporating physics-informed priors and developing interpretable representation learning methods.</b>
+<b>I am a [Schmidt AI in Science Fellow](https://aiscience.uchicago.edu/) at the [University of Chicago](https://datascience.uchicago.edu) working at the intersection of physics and machine learning. My research interests include physics-informed machine learning and interpretable representational learning with applications in nonlinear dynamics, condensed matter physics, photonics, fluid dynamics, biophysics, and other areas. I aim to develop new computational methods for modeling and understanding physical systems with an emphasis on incorporating physics-informed priors and identifying relevant and interpretable latent representations.</b>
 
 <b>I received a Ph.D. in Physics from MIT in 2022, and an A.B. in Physics and Mathematics from Harvard in 2016.</b>
