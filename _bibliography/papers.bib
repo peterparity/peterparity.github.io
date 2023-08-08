@@ -1,15 +1,81 @@
 ---
 ---
 
-@misc{2302.12235,
-  author   = {Owen Dugan and Peter Y. Lu and Rumen Dangovski and Di Luo and Marin Soljačić},
-  title    = {Q-Flow: Generative Modeling for Differential Equations of Open Quantum Dynamics with Normalizing Flows},
+@article{Lu2023,
+  author   = {Lu, Peter Y.
+              and Dangovski, Rumen
+              and Solja{\v{c}}i{\'{c}}, Marin},
+  title    = {Discovering conservation laws using optimal transport and manifold learning},
+  journal  = {Nature Communications},
   year     = {2023},
-  eprint   = {arXiv:2302.12235},
-  arxiv    = {2302.12235},
-  pdf      = {https://arxiv.org/pdf/2302.12235.pdf},
-  abstract = {Studying the dynamics of open quantum systems holds the potential to enable breakthroughs both in fundamental physics and applications to quantum engineering and quantum computation. Due to the high-dimensional nature of the problem, customized deep generative neural networks have been instrumental in modeling the high-dimensional density matrix $\rho$, which is the key description for the dynamics of such systems. However, the complex-valued nature and normalization constraints of $\rho$, as well as its complicated dynamics, prohibit a seamless connection between open quantum systems and the recent advances in deep generative modeling. Here we lift that limitation by utilizing a reformulation of open quantum system dynamics to a partial differential equation (PDE) for a corresponding probability distribution $Q$, the Husimi Q function. 
-              Thus, we model the Q function seamlessly with \emph{off-the-shelf} deep generative models such as normalizing flows. Additionally, we develop novel methods for learning  normalizing flow evolution governed by high-dimensional PDEs, based on the Euler method and the application of the time-dependent variational principle. We name the resulting approach \emph{Q-Flow} and demonstrate the scalability and efficiency of Q-Flow on open quantum system simulations, including the dissipative harmonic oscillator and the dissipative bosonic model. Q-Flow is superior to conventional PDE solvers and state-of-the-art physics-informed neural network solvers, especially in high-dimensional systems.}
+  month    = {Aug},
+  day      = {07},
+  volume   = {14},
+  number   = {1},
+  pages    = {4744},
+  abstract = {Conservation laws are key theoretical and practical tools for understanding, characterizing, and modeling nonlinear dynamical systems. However, for many complex systems, the corresponding conserved quantities are difficult to identify, making it hard to analyze their dynamics and build stable predictive models. Current approaches for discovering conservation laws often depend on detailed dynamical information or rely on black box parametric deep learning methods. We instead reformulate this task as a manifold learning problem and propose a non-parametric approach for discovering conserved quantities. We test this new approach on a variety of physical systems and demonstrate that our method is able to both identify the number of conserved quantities and extract their values. Using tools from optimal transport theory and manifold learning, our proposed method provides a direct geometric approach to identifying conservation laws that is both robust and interpretable without requiring an explicit model of the system nor accurate time information.},
+  issn     = {2041-1723},
+  doi      = {10.1038/s41467-023-40325-7},
+  url      = {https://doi.org/10.1038/s41467-023-40325-7},
+  html     = {https://doi.org/10.1038/s41467-023-40325-7},
+  pdf      = {https://www.nature.com/articles/s41467-023-40325-7.pdf},
+  poster   = {conservation_laws_poster.pdf},
+  code     = {https://github.com/peterparity/conservation-laws-manifold-learning},
+  selected = {true}
+}
+
+@inproceedings{pmlr-v202-dugan23a,
+  title     = {Q-Flow: Generative Modeling for Differential Equations of Open Quantum Dynamics with Normalizing Flows},
+  author    = {Dugan, Owen M and Lu, Peter Y. and Dangovski, Rumen and Luo, Di and Soljačić, Marin},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages     = {8879--8901},
+  year      = {2023},
+  editor    = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume    = {202},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {23--29 Jul},
+  publisher = {PMLR},
+  abstract  = {Studying the dynamics of open quantum systems can enable breakthroughs both in fundamental physics and applications to quantum engineering and quantum computation. Since the density matrix $\rho$, which is the fundamental description for the dynamics of such systems, is high-dimensional, customized deep generative neural networks have been instrumental in modeling $\rho$. However, the complex-valued nature and normalization constraints of $\rho$, as well as its complicated dynamics, prohibit a seamless connection between open quantum systems and the recent advances in deep generative modeling. Here we lift that limitation by utilizing a reformulation of open quantum system dynamics to a partial differential equation (PDE) for a corresponding probability distribution $Q$, the Husimi Q function. Thus, we model the Q function seamlessly with <em>off-the-shelf</em> deep generative models such as normalizing flows. Additionally, we develop novel methods for learning normalizing flow evolution governed by high-dimensional PDEs based on the Euler method and the application of the time-dependent variational principle. We name the resulting approach <em>Q-Flow</em> and demonstrate the scalability and efficiency of Q-Flow on open quantum system simulations, including the dissipative harmonic oscillator and the dissipative bosonic model. Q-Flow is superior to conventional PDE solvers and state-of-the-art physics-informed neural network solvers, especially in high-dimensional systems.},
+  pdf       = {https://proceedings.mlr.press/v202/dugan23a/dugan23a.pdf},
+  url       = {https://proceedings.mlr.press/v202/dugan23a.html},
+  html      = {https://proceedings.mlr.press/v202/dugan23a.html},
+  selected  = {true}
+}
+
+@misc{jiang2023training,
+  title         = {Training neural operators to preserve invariant measures of chaotic attractors},
+  author        = {Ruoxi Jiang and Peter Y. Lu and Elena Orlova and Rebecca Willett},
+  year          = {2023},
+  eprint        = {2306.01187},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  arxiv         = {2306.01187},
+  pdf           = {https://arxiv.org/pdf/2306.01187.pdf},
+  abstract      = {Chaotic systems make long-horizon forecasts difficult because small perturbations in initial conditions cause trajectories to diverge at an exponential rate. In this setting, neural operators trained to minimize squared error losses, while capable of accurate short-term forecasts, often fail to reproduce statistical or structural properties of the dynamics over longer time horizons and can yield degenerate results. In this paper, we propose an alternative framework designed to preserve invariant measures of chaotic attractors that characterize the time-invariant statistical properties of the dynamics. Specifically, in the multi-environment setting (where each sample trajectory is governed by slightly different dynamics), we consider two novel approaches to training with noisy data. First, we propose a loss based on the optimal transport distance between the observed dynamics and the neural operator outputs. This approach requires expert knowledge of the underlying physics to determine what statistical features should be included in the optimal transport loss. Second, we show that a contrastive learning framework, which does not require any specialized prior knowledge, can preserve statistical properties of the dynamics nearly as well as the optimal transport approach. On a variety of chaotic systems, our method is shown empirically to preserve invariant measures of chaotic attractors.}
+}
+
+@misc{orlova2023deep,
+  title         = {Deep Stochastic Mechanics},
+  author        = {Elena Orlova and Aleksei Ustimenko and Ruoxi Jiang and Peter Y. Lu and Rebecca Willett},
+  year          = {2023},
+  eprint        = {2305.19685},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  arxiv         = {2305.19685},
+  pdf           = {https://arxiv.org/pdf/2305.19685.pdf},
+  abstract      = {This paper introduces a novel deep-learning-based approach for numerical simulation of a time-evolving Schrödinger equation inspired by stochastic mechanics and generative diffusion models. Unlike existing approaches, which exhibit computational complexity that scales exponentially in the problem dimension, our method allows us to adapt to the latent low-dimensional structure of the wave function by sampling from the Markovian diffusion. Depending on the latent dimension, our method may have far lower computational complexity in higher dimensions. Moreover, we propose novel equations for stochastic quantum mechanics, resulting in linear computational complexity with respect to the number of dimensions. Numerical simulations verify our theoretical findings and show a significant advantage of our method compared to other deep-learning-based approaches used for quantum mechanics.}
+}
+
+@inproceedings{hernandez2022model,
+  title     = {Model Stitching: Looking For Functional Similarity Between Representations},
+  author    = {Adriano Hernandez and Rumen Dangovski and Peter Y. Lu and Marin Soljačić},
+  booktitle = {SVRHM 2022 Workshop @ NeurIPS},
+  year      = {2022},
+  url       = {https://openreview.net/forum?id=7bHLCO5FQdB},
+  html      = {https://openreview.net/forum?id=7bHLCO5FQdB},
+  pdf       = {https://openreview.net/pdf?id=7bHLCO5FQdB},
+  arxiv     = {2303.11277},
+  abstract  = {Model stitching (Lenc & Vedaldi 2015) is a compelling methodology to compare different neural network representations, because it allows us to measure to what degree they may be interchanged. We expand on a previous work from Bansal, Nakkiran & Barak which used model stitching to compare representations of the same shapes learned by differently seeded and/or trained neural networks of the same architecture. Our contribution enables us to compare the representations learned by layers with different shapes from neural networks with different architectures. We subsequently reveal unexpected behavior of model stitching. Namely, we find that stitching, based on convolutions, for small ResNets, can reach high accuracy if those layers come later in the first (sender) network than in the second (receiver), even if those layers are far apart.}
 }
 
 @article{kim2022deep,
@@ -22,19 +88,6 @@
   html     = {https://openreview.net/forum?id=tPMQ6Je2rB},
   pdf      = {https://openreview.net/pdf?id=tPMQ6Je2rB},
   code     = {https://github.com/samuelkim314/DeepBO},
-  selected = {true}
-}
-
-@misc{2208.14995,
-  author   = {Peter Y. Lu and Rumen Dangovski and Marin Soljačić},
-  title    = {Discovering Conservation Laws using Optimal Transport and Manifold Learning},
-  year     = {2022},
-  eprint   = {arXiv:2208.14995},
-  arxiv    = {2208.14995},
-  pdf      = {https://arxiv.org/pdf/2208.14995.pdf},
-  abstract = {Conservation laws are key theoretical and practical tools for understanding, characterizing, and modeling nonlinear dynamical systems. However, for many complex dynamical systems, the corresponding conserved quantities are difficult to identify, making it hard to analyze their dynamics and build efficient, stable predictive models. Current approaches for discovering conservation laws often depend on detailed dynamical information, such as the equation of motion or fine-grained time measurements, with many recent proposals also relying on black box parametric deep learning methods. We instead reformulate this task as a manifold learning problem and propose a non-parametric approach, combining the Wasserstein metric from optimal transport with diffusion maps, to discover conserved quantities that vary across trajectories sampled from a dynamical system. We test this new approach on a variety of physical systems---including conservative Hamiltonian systems, dissipative systems, and spatiotemporal systems---and demonstrate that our manifold learning method is able to both identify the number of conserved quantities and extract their values. Using tools from optimal transport theory and manifold learning, our proposed method provides a direct geometric approach to identifying conservation laws that is both robust and interpretable without requiring an explicit model of the system nor accurate time information.},
-  poster   = {conservation_laws_poster.pdf},
-  code     = {https://github.com/peterparity/conservation-laws-manifold-learning},
   selected = {true}
 }
 
@@ -157,7 +210,6 @@
   url       = {https://link.aps.org/doi/10.1103/PhysRevE.88.062204},
   html      = {https://link.aps.org/doi/10.1103/PhysRevE.88.062204},
   pdf       = {https://journals.aps.org/pre/pdf/10.1103/PhysRevE.88.062204},
-  arxiv     = {1310.4235},
   abstract  = {In a granular gas, inelastic collisions produce an instability in which the constituent particles cluster heterogeneously. These clusters then interact with each other, further decreasing their kinetic energy. We report experiments of the free collisions of dense clusters of particles in a two-dimensional geometry. The particles are composed of solid CO<span class="aps-inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mrow></mrow><mn>2</mn></msub></math></span>, which float nearly frictionlessly on a hot surface due to sublimated vapor. After two dense clusters of <span class="aps-inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≈</mo></math></span>100 particles collide, there are two distinct stages of evolution. First, the translational kinetic energy rapidly decreases by over 90% as a “jamming front” sweeps across each cluster. Subsequently, the kinetic energy decreases more slowly as the particles approach the container boundaries. In this regime, the measured velocity distributions are non-Gaussian with long tails. Finally, we compare our experiments to computer simulations of colliding, two-dimensional, granular clusters composed of circular, viscoelastic particles with friction.}
 }
 
@@ -176,7 +228,6 @@
   url       = {https://link.aps.org/doi/10.1103/PhysRevLett.111.188001},
   html      = {https://link.aps.org/doi/10.1103/PhysRevLett.111.188001},
   pdf       = {https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.111.188001},
-  arxiv     = {1306.2687},
   abstract  = {We explore the initial moments of impact between two dense granular clusters in a two-dimensional geometry. The particles are composed of solid <span class="aps-inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>CO</mi><mn>2</mn></msub></math></span> and are levitated on a hot surface. Upon collision, the propagation of a dynamic “jamming front” produces a distinct regime for energy dissipation in a granular gas in which the translational kinetic energy decreases by over 90%. Experiments and associated simulations show that the initial loss of kinetic energy obeys a power law in time <span class="aps-inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Δ</mi><mi>E</mi><mo>=</mo><mo>−</mo><mi>K</mi><msup><mi>t</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></math></span>, a form that can be predicted from kinetic arguments.},
   selected  = {true}
 }

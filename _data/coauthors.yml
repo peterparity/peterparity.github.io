@@ -4,7 +4,7 @@
 
 "Kim":
   - firstname: ["Samuel", "S."]
-    url: https://scholar.google.com/citations?user=PBzWCRUAAAAJ
+    url: https://www.linkedin.com/in/samuel-kim-a2258863
 
 "Jing":
   - firstname: ["Li", "L."]
@@ -45,3 +45,15 @@
 "Smith":
   - firstname: ["Jamie", "J."]
     url: https://scholar.google.com/citations?user=jk17mo8AAAAJ
+
+"Willett":
+  - firstname: ["Rebecca", "R."]
+    url: https://willett.psd.uchicago.edu/
+
+"Jiang":
+  - firstname: ["Ruoxi", "Roxie", "R."]
+    url: https://roxie62.github.io/
+
+"Orlova":
+  - firstname: ["Elena", "E."]
+    url: https://www.linkedin.com/in/elena-orlova-32b901128
