@@ -1,6 +1,32 @@
 ---
 ---
 
+@misc{jiang2023training,
+  title         = {Training neural operators to preserve invariant measures of chaotic attractors},
+  author        = {Ruoxi Jiang and Peter Y. Lu and Elena Orlova and Rebecca Willett},
+  year          = {2023},
+  eprint        = {2306.01187},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  arxiv         = {2306.01187},
+  pdf           = {https://arxiv.org/pdf/2306.01187.pdf},
+  abstract      = {Chaotic systems make long-horizon forecasts difficult because small perturbations in initial conditions cause trajectories to diverge at an exponential rate. In this setting, neural operators trained to minimize squared error losses, while capable of accurate short-term forecasts, often fail to reproduce statistical or structural properties of the dynamics over longer time horizons and can yield degenerate results. In this paper, we propose an alternative framework designed to preserve invariant measures of chaotic attractors that characterize the time-invariant statistical properties of the dynamics. Specifically, in the multi-environment setting (where each sample trajectory is governed by slightly different dynamics), we consider two novel approaches to training with noisy data. First, we propose a loss based on the optimal transport distance between the observed dynamics and the neural operator outputs. This approach requires expert knowledge of the underlying physics to determine what statistical features should be included in the optimal transport loss. Second, we show that a contrastive learning framework, which does not require any specialized prior knowledge, can preserve statistical properties of the dynamics nearly as well as the optimal transport approach. On a variety of chaotic systems, our method is shown empirically to preserve invariant measures of chaotic attractors.},
+  comment       = { --- Accepted at NeurIPS 2023},
+  selected      = {true}
+}
+
+@misc{orlova2023deep,
+  title         = {Deep Stochastic Mechanics},
+  author        = {Elena Orlova and Aleksei Ustimenko and Ruoxi Jiang and Peter Y. Lu and Rebecca Willett},
+  year          = {2023},
+  eprint        = {2305.19685},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  arxiv         = {2305.19685},
+  pdf           = {https://arxiv.org/pdf/2305.19685.pdf},
+  abstract      = {This paper introduces a novel deep-learning-based approach for numerical simulation of a time-evolving Schrödinger equation inspired by stochastic mechanics and generative diffusion models. Unlike existing approaches, which exhibit computational complexity that scales exponentially in the problem dimension, our method allows us to adapt to the latent low-dimensional structure of the wave function by sampling from the Markovian diffusion. Depending on the latent dimension, our method may have far lower computational complexity in higher dimensions. Moreover, we propose novel equations for stochastic quantum mechanics, resulting in linear computational complexity with respect to the number of dimensions. Numerical simulations verify our theoretical findings and show a significant advantage of our method compared to other deep-learning-based approaches used for quantum mechanics.}
+}
+
 @article{10253952,
   author   = {Zhang, Michael and Kim, Samuel and Lu, Peter Y. and Soljačić, Marin},
   journal  = {IEEE Transactions on Neural Networks and Learning Systems},
@@ -52,33 +78,12 @@
   publisher = {PMLR},
   abstract  = {Studying the dynamics of open quantum systems can enable breakthroughs both in fundamental physics and applications to quantum engineering and quantum computation. Since the density matrix $\rho$, which is the fundamental description for the dynamics of such systems, is high-dimensional, customized deep generative neural networks have been instrumental in modeling $\rho$. However, the complex-valued nature and normalization constraints of $\rho$, as well as its complicated dynamics, prohibit a seamless connection between open quantum systems and the recent advances in deep generative modeling. Here we lift that limitation by utilizing a reformulation of open quantum system dynamics to a partial differential equation (PDE) for a corresponding probability distribution $Q$, the Husimi Q function. Thus, we model the Q function seamlessly with <em>off-the-shelf</em> deep generative models such as normalizing flows. Additionally, we develop novel methods for learning normalizing flow evolution governed by high-dimensional PDEs based on the Euler method and the application of the time-dependent variational principle. We name the resulting approach <em>Q-Flow</em> and demonstrate the scalability and efficiency of Q-Flow on open quantum system simulations, including the dissipative harmonic oscillator and the dissipative bosonic model. Q-Flow is superior to conventional PDE solvers and state-of-the-art physics-informed neural network solvers, especially in high-dimensional systems.},
   pdf       = {https://proceedings.mlr.press/v202/dugan23a/dugan23a.pdf},
+  slides    = {https://icml.cc/media/icml-2023/Slides/23549.pdf},
+  poster    = {https://icml.cc/media/PosterPDFs/ICML%202023/23549.png?t=1688703681.6640208},
+  video     = {https://icml.cc/virtual/2023/poster/23549},
   url       = {https://proceedings.mlr.press/v202/dugan23a.html},
   html      = {https://proceedings.mlr.press/v202/dugan23a.html},
   selected  = {true}
-}
-
-@misc{jiang2023training,
-  title         = {Training neural operators to preserve invariant measures of chaotic attractors},
-  author        = {Ruoxi Jiang and Peter Y. Lu and Elena Orlova and Rebecca Willett},
-  year          = {2023},
-  eprint        = {2306.01187},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
-  arxiv         = {2306.01187},
-  pdf           = {https://arxiv.org/pdf/2306.01187.pdf},
-  abstract      = {Chaotic systems make long-horizon forecasts difficult because small perturbations in initial conditions cause trajectories to diverge at an exponential rate. In this setting, neural operators trained to minimize squared error losses, while capable of accurate short-term forecasts, often fail to reproduce statistical or structural properties of the dynamics over longer time horizons and can yield degenerate results. In this paper, we propose an alternative framework designed to preserve invariant measures of chaotic attractors that characterize the time-invariant statistical properties of the dynamics. Specifically, in the multi-environment setting (where each sample trajectory is governed by slightly different dynamics), we consider two novel approaches to training with noisy data. First, we propose a loss based on the optimal transport distance between the observed dynamics and the neural operator outputs. This approach requires expert knowledge of the underlying physics to determine what statistical features should be included in the optimal transport loss. Second, we show that a contrastive learning framework, which does not require any specialized prior knowledge, can preserve statistical properties of the dynamics nearly as well as the optimal transport approach. On a variety of chaotic systems, our method is shown empirically to preserve invariant measures of chaotic attractors.}
-}
-
-@misc{orlova2023deep,
-  title         = {Deep Stochastic Mechanics},
-  author        = {Elena Orlova and Aleksei Ustimenko and Ruoxi Jiang and Peter Y. Lu and Rebecca Willett},
-  year          = {2023},
-  eprint        = {2305.19685},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
-  arxiv         = {2305.19685},
-  pdf           = {https://arxiv.org/pdf/2305.19685.pdf},
-  abstract      = {This paper introduces a novel deep-learning-based approach for numerical simulation of a time-evolving Schrödinger equation inspired by stochastic mechanics and generative diffusion models. Unlike existing approaches, which exhibit computational complexity that scales exponentially in the problem dimension, our method allows us to adapt to the latent low-dimensional structure of the wave function by sampling from the Markovian diffusion. Depending on the latent dimension, our method may have far lower computational complexity in higher dimensions. Moreover, we propose novel equations for stochastic quantum mechanics, resulting in linear computational complexity with respect to the number of dimensions. Numerical simulations verify our theoretical findings and show a significant advantage of our method compared to other deep-learning-based approaches used for quantum mechanics.}
 }
 
 @inproceedings{hernandez2022model,
