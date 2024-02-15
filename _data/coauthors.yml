@@ -19,11 +19,11 @@
     url: https://www.linkedin.com/in/charlotte-loh-b80329193
 
 "Nagel":
-  - firstname: ["Sidney R.", "S. R."]
+  - firstname: ["Sidney", "Sidney R.", "S. R."]
     url: https://nagelgroup.uchicago.edu/Nagel-Group/index.html
 
 "Burton":
-  - firstname: ["Justin C.", "J. C."]
+  - firstname: ["Justin", "Justin C.", "J. C."]
     url: https://www.jcburtonlab.com/
 
 "Luo":
@@ -35,7 +35,7 @@
     url: https://www.linkedin.com/in/kimberly-reichel
 
 "Mittleman":
-  - firstname: ["Daniel M.", "D. M."]
+  - firstname: ["Daniel", "Daniel M.", "D. M."]
     url: https://www.brown.edu/research/labs/mittleman/home
 
 "Snoek":
@@ -61,3 +61,11 @@
 "Orlova":
   - firstname: ["Elena", "E."]
     url: https://www.linkedin.com/in/elena-orlova-32b901128
+
+"Dugan":
+  - firstname: ["Owen", "Owen M.", "O. M."]
+    url: https://druidowm.github.io/
+
+"Ustimenko":
+  - firstname: ["Aleksei", "A."]
+    url: https://scholar.google.com/citations?user=OES5pK4AAAAJ
