@@ -1,18 +1,17 @@
 ---
 ---
 
-@misc{jiang2023training,
-  title         = {Training neural operators to preserve invariant measures of chaotic attractors},
-  author        = {Ruoxi Jiang* and Peter Y. Lu* and Elena Orlova and Rebecca Willett},
-  year          = {2023},
-  eprint        = {2306.01187},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
-  arxiv         = {2306.01187},
-  pdf           = {https://arxiv.org/pdf/2306.01187.pdf},
-  abstract      = {Chaotic systems make long-horizon forecasts difficult because small perturbations in initial conditions cause trajectories to diverge at an exponential rate. In this setting, neural operators trained to minimize squared error losses, while capable of accurate short-term forecasts, often fail to reproduce statistical or structural properties of the dynamics over longer time horizons and can yield degenerate results. In this paper, we propose an alternative framework designed to preserve invariant measures of chaotic attractors that characterize the time-invariant statistical properties of the dynamics. Specifically, in the multi-environment setting (where each sample trajectory is governed by slightly different dynamics), we consider two novel approaches to training with noisy data. First, we propose a loss based on the optimal transport distance between the observed dynamics and the neural operator outputs. This approach requires expert knowledge of the underlying physics to determine what statistical features should be included in the optimal transport loss. Second, we show that a contrastive learning framework, which does not require any specialized prior knowledge, can preserve statistical properties of the dynamics nearly as well as the optimal transport approach. On a variety of chaotic systems, our method is shown empirically to preserve invariant measures of chaotic attractors.},
-  comment       = { --- Accepted at NeurIPS 2023},
-  selected      = {true}
+@inproceedings{jiang2023training,
+  title     = {Training neural operators to preserve invariant measures of chaotic attractors},
+  author    = {Ruoxi Jiang* and Peter Y. Lu* and Elena Orlova and Rebecca Willett},
+  booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
+  year      = {2023},
+  abstract  = {Chaotic systems make long-horizon forecasts difficult because small perturbations in initial conditions cause trajectories to diverge at an exponential rate. In this setting, neural operators trained to minimize squared error losses, while capable of accurate short-term forecasts, often fail to reproduce statistical or structural properties of the dynamics over longer time horizons and can yield degenerate results. In this paper, we propose an alternative framework designed to preserve invariant measures of chaotic attractors that characterize the time-invariant statistical properties of the dynamics. Specifically, in the multi-environment setting (where each sample trajectory is governed by slightly different dynamics), we consider two novel approaches to training with noisy data. First, we propose a loss based on the optimal transport distance between the observed dynamics and the neural operator outputs. This approach requires expert knowledge of the underlying physics to determine what statistical features should be included in the optimal transport loss. Second, we show that a contrastive learning framework, which does not require any specialized prior knowledge, can preserve statistical properties of the dynamics nearly as well as the optimal transport approach. On a variety of chaotic systems, our method is shown empirically to preserve invariant measures of chaotic attractors.},
+  url       = {https://openreview.net/forum?id=8xx0pyMOW1},
+  pdf       = {https://openreview.net/pdf?id=8xx0pyMOW1},
+  html      = {https://neurips.cc/virtual/2023/poster/72621},
+  poster    = {https://neurips.cc/media/neurips-2023/Slides/72621.pdf},
+  selected  = {true}
 }
 
 @misc{orlova2023deep,
@@ -24,7 +23,8 @@
   primaryclass  = {cs.LG},
   arxiv         = {2305.19685},
   pdf           = {https://arxiv.org/pdf/2305.19685.pdf},
-  abstract      = {This paper introduces a novel deep-learning-based approach for numerical simulation of a time-evolving Schrödinger equation inspired by stochastic mechanics and generative diffusion models. Unlike existing approaches, which exhibit computational complexity that scales exponentially in the problem dimension, our method allows us to adapt to the latent low-dimensional structure of the wave function by sampling from the Markovian diffusion. Depending on the latent dimension, our method may have far lower computational complexity in higher dimensions. Moreover, we propose novel equations for stochastic quantum mechanics, resulting in linear computational complexity with respect to the number of dimensions. Numerical simulations verify our theoretical findings and show a significant advantage of our method compared to other deep-learning-based approaches used for quantum mechanics.}
+  abstract      = {This paper introduces a novel deep-learning-based approach for numerical simulation of a time-evolving Schrödinger equation inspired by stochastic mechanics and generative diffusion models. Unlike existing approaches, which exhibit computational complexity that scales exponentially in the problem dimension, our method allows us to adapt to the latent low-dimensional structure of the wave function by sampling from the Markovian diffusion. Depending on the latent dimension, our method may have far lower computational complexity in higher dimensions. Moreover, we propose novel equations for stochastic quantum mechanics, resulting in linear computational complexity with respect to the number of dimensions. Numerical simulations verify our theoretical findings and show a significant advantage of our method compared to other deep-learning-based approaches used for quantum mechanics.},
+  selected      = {true}
 }
 
 @article{10253952,
