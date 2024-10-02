@@ -12,6 +12,7 @@
   arxiv         = {2409.18402},
   pdf           = {https://arxiv.org/pdf/2409.18402.pdf},
   abstract      = {Scientific modeling and engineering applications rely heavily on parameter estimation methods to fit physical models and calibrate numerical simulations using real-world measurements. In the absence of analytic statistical models with tractable likelihoods, modern simulation-based inference (SBI) methods first use a numerical simulator to generate a dataset of parameters and simulated outputs. This dataset is then used to approximate the likelihood and estimate the system parameters given observation data. Several SBI methods employ machine learning emulators to accelerate data generation and parameter estimation. However, applying these approaches to high-dimensional physical systems remains challenging due to the cost and complexity of training high-dimensional emulators. This paper introduces Embed and Emulate (E&E): a new SBI method based on contrastive learning that efficiently handles high-dimensional data and complex, multimodal parameter posteriors. E&E learns a low-dimensional latent embedding of the data (i.e., a summary statistic) and a corresponding fast emulator in the latent space, eliminating the need to run expensive simulations or a high dimensional emulator during inference. We illustrate the theoretical properties of the learned latent space through a synthetic experiment and demonstrate superior performance over existing methods in a realistic, non-identifiable parameter estimation task using the high-dimensional, chaotic Lorenz 96 system.},
+  comment       = { --- In Submission},
   selected      = {true}
 }
 
@@ -46,6 +47,7 @@
   arxiv         = {2312.00111},
   pdf           = {https://arxiv.org/pdf/2312.00111.pdf},
   abstract      = {Artificial intelligence is transforming computational materials science, improving the prediction of material properties, and accelerating the discovery of novel materials. Recently, publicly available material data repositories have grown rapidly. This growth encompasses not only more materials, but also a greater variety and quantity of their associated properties. Existing machine learning efforts in materials science focus primarily on single-modality tasks, i.e., relationships between materials and a single physical property, thus not taking advantage of the rich and multimodal set of material properties. Here, we introduce Multimodal Learning for Materials (MultiMat), which enables self-supervised multi-modality training of foundation models for materials. We demonstrate our framework's potential using data from the Materials Project database on multiple axes: (i) MultiMat achieves state-of-the-art performance for challenging material property prediction tasks; (ii) MultiMat enables novel and accurate material discovery via latent space similarity, enabling screening for stable materials with desired properties; and (iii) MultiMat encodes interpretable emergent features that may provide novel scientific insights.},
+  comment       = { --- In Submission},
   selected      = {true}
 }
 
@@ -122,10 +124,21 @@
   selected  = {true}
 }
 
+@inproceedings{cy2023studying,
+  title     = {Studying Phase Transitions in Contrastive Learning With Physics-Inspired Datasets},
+  author    = {Ali Cy and Anugrah Chemparathy and Michael Han and Rumen Dangovski and Peter Y. Lu and Marin Soljačić},
+  booktitle = {ICLR 2023 Workshop on Physics for Machine Learning},
+  year      = {2023},
+  url       = {https://openreview.net/forum?id=djssHWljSA},
+  html      = {https://openreview.net/forum?id=djssHWljSA},
+  pdf       = {https://openreview.net/pdf?id=djssHWljSA},
+  abstract  = {In recent years contrastive learning has become a state-of-the-art technique in representation learning, but the exact mechanisms by which it trains are not well understood. By focusing on physics-inspired datasets with low intrinsic dimensionality, we are able to visualize and study contrastive training procedures in better resolution. We empirically study the geometric development of contrastively learned embeddings, discovering phase transitions between locally metastable embedding conformations towards an optimal structure. Ultimately we show a strong experimental link between stronger augmentations and decreased training time for contrastively learning more geometrically meaningful representations.}
+}
+
 @inproceedings{hernandez2022model,
   title     = {Model Stitching: Looking For Functional Similarity Between Representations},
   author    = {Adriano Hernandez and Rumen Dangovski and Peter Y. Lu and Marin Soljačić},
-  booktitle = {SVRHM 2022 Workshop @ NeurIPS},
+  booktitle = {NeurIPS 2022 Workshop on Shared Visual Representations in Human and Machine Intelligence},
   year      = {2022},
   url       = {https://openreview.net/forum?id=7bHLCO5FQdB},
   html      = {https://openreview.net/forum?id=7bHLCO5FQdB},
