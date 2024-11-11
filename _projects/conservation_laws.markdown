@@ -2,7 +2,7 @@
 layout: post
 title: Discovering Conservation Laws using Geometry
 description: We propose a direct geometric approach for discovering conservation laws using optimal transport and manifold learning.
-date: 2022-01-10
+date: 2023-09-24
 img: /assets/img/projects/conservation_laws/key_image.svg
 github: https://github.com/peterparity/conservation-laws-manifold-learning
 paper: https://doi.org/10.1038/s41467-023-40325-7
