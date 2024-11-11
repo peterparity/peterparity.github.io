@@ -6,7 +6,7 @@ date: 2022-01-10
 img: /assets/img/projects/symder/key_image.svg
 github: https://github.com/peterparity/symder
 paper: https://doi.org/10.1038/s42005-022-00987-z
-importance: 1
+importance: 2
 
 _styles: >
   figure {
